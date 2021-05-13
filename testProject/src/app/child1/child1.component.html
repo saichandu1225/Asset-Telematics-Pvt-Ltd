@@ -1,0 +1,11 @@
+<div class="container text-center" *ngIf='recivedData!=null'>
+  <p>Data recived to child is Height: {{recivedData.height}}cm, Width: {{recivedData.width}}cm</p>
+</div>
+
+
+<div class="container text-center">
+  <h4>To Get the Area Please click Calculate</h4>
+  <div class='text-center'>
+    <button type="submit" class="btn btn-primary" (click)='area()' [disabled]="recivedData==null">claculate</button>
+  </div>
+</div>
